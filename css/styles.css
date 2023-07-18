@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-family: hand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+root {
+  --site-color1: #12ceaf;
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../Img/HotelStreet.jpg);
+  content: url(../Img/facebook-color.png);
+  content: url(../Img/instagram-color.png);
+}
+body {
+  background-image: url(../img/layout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+h1 {
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
+  font-family: roboto-bold;
+  font-weight: 600;
+}
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
+  font-family: roboto-bold;
+  font-weight: 600;
+}
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
+  font-family: roboto-bold;
+  font-weight: 600;
+}
+h4 {
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
+  font-family: roboto-bold;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  font-family: roboto-bold;
+}
+
+a {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  font-family: roboto-bold;
+}
+
+.header-main {
+  /* top bar of the site*/
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.header-main-logo {
+  width: fit-content;
+  height: 100%;
+
+  display: flex;
+}
+
+.header-main-logo img {
+  height: 60px;
+  width: auto;
+  padding-left: 40px;
+  margin-right: 20px;
+}
+
+.header-main-nav {
+  text-underline-position: auto;
+  width: fit-content;
+  height: 100%;
+  display: block;
+}
+
+.header-main-nav ul li {
+  margin-left: 20px;
+  display: inline;
+  float: left;
+}
+.header-main-nav ul li a {
+  padding: 0 10px;
+  font-size: large;
+  line-height: 60px;
+  color: black;
+  display: block;
+  height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+  color: rgb(105, 9, 196);
+}
+
+.header-main-sm {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-main-sm-fb {
+  width: 25px;
+  height: 25px;
+  background-image: url(../Img/facebook-black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-main-sm-fb:hover {
+  background-image: url(../Img/facebook-color.png);
+  transition: ease-in-out 200ms;
+}
+
+.header-main-sm-in {
+  width: 25px;
+  height: 25px;
+  background-image: url(../Img/instagram-black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-main-sm-in:hover {
+  background-image: url(../Img/instagram-color.png);
+  transition: ease-in-out 200ms;
+}
