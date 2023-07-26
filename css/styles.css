@@ -71,7 +71,7 @@ a {
 
 .header-main {
   /* top bar of the site*/
-  position: sticky;
+  position: fixed;
   width: 100%;
   height: 60px;
   background-color: white;
